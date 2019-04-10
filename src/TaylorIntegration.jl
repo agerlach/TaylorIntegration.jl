@@ -9,12 +9,13 @@ using Markdown
 using Requires
 
 
-export taylorinteg, lyap_taylorinteg, @taylorize
+export taylorinteg, lyap_taylorinteg, @taylorize, TaylorInterpolator
 
 include("explicitode.jl")
 include("lyapunovspectrum.jl")
 include("rootfinding.jl")
 include("parse_eqs.jl")
+include("interpolator.jl")
 
 function __init__()
     # Remember to delete this message when we release the next minor/major version
