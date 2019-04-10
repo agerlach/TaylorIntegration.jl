@@ -12,7 +12,7 @@ const tT = Taylor1(_order)
     t0 = 0.0
     x0 = 1.0
     x0T = Taylor1(x0, _order)
-    tT[1] = t0
+    tT[0] = t0
     TaylorIntegration.jetcoeffs!(eqs_mov, tT, x0T, nothing)
     @test x0T.coeffs[end] == 1.0
     δt = _abstol^inv(_order-1)
@@ -74,7 +74,7 @@ end
     tmax = 0.3
     x0 = 3.0
     x0T = Taylor1(x0, _order)
-    tT[1] = t0
+    tT[0] = t0
     TaylorIntegration.jetcoeffs!(eqs_mov, tT, x0T, nothing)
     @test x0T.coeffs[end] == 3.0^(_order+1)
     δt = (_abstol/x0T.coeffs[end-1])^inv(_order-1)
