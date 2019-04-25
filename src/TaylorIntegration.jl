@@ -10,13 +10,13 @@ using Requires
 using AutoHashEquals
 
 
-export taylorinteg, lyap_taylorinteg, @taylorize, TaylorInterpolator
+export taylorinteg, lyap_taylorinteg, @taylorize, TaylorInterpolant
 
 include("explicitode.jl")
 include("lyapunovspectrum.jl")
 include("rootfinding.jl")
 include("parse_eqs.jl")
-include("interpolator.jl")
+include("interpolation.jl")
 
 function __init__()
     # Remember to delete this message when we release the next minor/major version
