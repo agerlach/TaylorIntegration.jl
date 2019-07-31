@@ -4,6 +4,7 @@ repo = "https://github.com/PerezHz/TaylorIntegration.jl.git"
 version = "0.5.1"
 
 [deps]
+AutoHashEquals = "15f4f7f2-30c1-5605-9d31-71845cf9641f"
 DiffEqBase = "2b5f629d-d688-5b77-993f-72d75c75574e"
 Espresso = "6912e4f1-e036-58b0-9138-08d1e6358ea9"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
@@ -13,6 +14,7 @@ Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 TaylorSeries = "6aa5eb33-94cf-58f4-a9d0-e4b2c4fc25ea"
 
 [compat]
+AutoHashEquals = "≥ 0.2.0"
 DiffEqBase = "≥ 5.0.0"
 Elliptic = "≥ 0.5.0"
 Espresso = "≥ 0.6.0"
